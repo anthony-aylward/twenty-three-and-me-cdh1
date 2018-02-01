@@ -75,7 +75,7 @@ class Parser
       parser.on(
         '-a',
         '--annotation ANNOTATION',
-        'limit output to variants with the provided annotation'
+        'Limit output to variants with the provided annotation'
       ) do |annotation|
         args.annotation = annotation
       end
