@@ -346,7 +346,7 @@ def check_for_protein_mutations(variants, annotations, fasta)
     codon_position = sequence_position % 3
     codon = sequence.scan(/.{3}/)[(sequence_position - codon_position) / 3]
               .upcase
-    variant_codon = String.new codon
+    variant_codon = String.new(codon)
     variant_codon[codon_position] = alternate_allele
     
     if GENETIC_CODE[codon] == GENETIC_CODE[variant_codon]
