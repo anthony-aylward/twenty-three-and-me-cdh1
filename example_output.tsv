@@ -1,0 +1,10 @@
+#rsid	chromosome	position	genotype	reference_allele	european_alt_allele_frequency	annotations
+i5004971	16	68772210	GG	G	nil	exon,exon_1
+i5004970	16	68772211	GG	G	nil	exon,exon_1
+i5004967	16	68844193	GG	G	nil	exon,exon_5
+i5004973	16	68855984	CC	C	nil	exon,exon_11
+rs33935154	16	68856041	GG	G	0.001	exon,exon_11,common_allele
+i5004974	16	68856093	CC	C	nil	exon,exon_11
+i5004969	16	68857460	CC	C	nil	exon,exon_12
+rs35572355	16	68867247	GG	G	0	exon,exon_15,common_allele
+i5004966	16	68867265	AA	A	nil	exon,exon_15
