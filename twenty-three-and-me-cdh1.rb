@@ -67,7 +67,7 @@ class Parser
       parser.on(
         '-r',
         '--23-and-me-raw RAW',
-        'Path to 23 and me raw data file'
+        'Path to 23andMe raw data file'
       ) do |raw_file_path|
         args.raw_file_path = raw_file_path
       end
