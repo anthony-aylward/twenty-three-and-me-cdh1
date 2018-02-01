@@ -37,7 +37,8 @@ class Parser
     args = Options.new('world')
 
     opt_parser = OptionParser.new do |parser|
-      parser.banner = 'Usage: example.rb --bed BED'
+      parser.banner = 'Usage: twenty-three-and-me-cdh1.rb -b BED -f FASTA ' \
+        '-v VCF -r RAW [-a ANNOTATION]'
 
       parser.on(
         '-b',
