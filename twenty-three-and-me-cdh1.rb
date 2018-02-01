@@ -154,7 +154,7 @@ end
 # file_path - String giving the path to the gene annotations file (BED format)
 #             on disk.
 #
-# Returns an array containing the coordinates of each exon and intron.
+# Returns a hash containing the coordinates of each exon and intron.
 def load_gene_annotations(file_path)
   annotations = { 'exon' => [], 'intron' => [] }
   
@@ -178,7 +178,7 @@ end
 # file_path - String giving the path to the FASTA file containing the gene
 #             sequence.
 #
-# Returns an array representation of the FASTA file.
+# Returns a hash representation of the FASTA file.
 def load_fasta(file_path)
   fasta = {}
   region = ''
@@ -199,7 +199,7 @@ end
 # file_path - String giving the path to the VCF file containing 1000 Genomes
 #             variant information (e.g. allele frequencies).
 #
-# Returns an array representation of the VCF file.
+# Returns a hash representation of the VCF file.
 def load_vcf(file_path)
   vcf = {}
   
