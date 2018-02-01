@@ -19,4 +19,4 @@ cd twenty-three-and-me-cdh1
 ruby twenty-three-and-me-cdh1.rb -b cdh1.bed -f cdh1.fasta -v cdh1.vcf -r example_raw_data.txt
 ```
 
-`example_raw_data.txt` contains several rare variants in the exons of the CDH1 gene. In the example, all have wild-type / normal genotypes. `example_output.tsv` contains the corresponding output, where it can be seen that the genotypes match the reference alleles.
+`example_raw_data.txt` contains several rare variants in the exons of the CDH1 gene. In the example, all have homozygous wild-type / normal genotypes. `example_output.tsv` contains the corresponding output, where it can be seen that the genotypes match the reference alleles.
