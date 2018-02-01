@@ -10,3 +10,11 @@ Usage: ruby twenty-three-and-me-cdh1.rb -b BED -f FASTA -v VCF -r RAW [-a ANNOTA
     -a, --annotation ANNOTATION      Limit output to variants with the provided annotation
     -h, --help                       Show this message
 ```
+
+To download the repo and run the example data, use the following commands:
+
+```
+git clone https://github.com/anthony-aylward/twenty-three-and-me-cdh1.git
+cd twenty-three-and-me-cdh1
+ruby twenty-three-and-me-cdh1.rb -b cdh1.bed -f cdh1.fasta -v cdh1.vcf -r example_raw_data.txt
+```
