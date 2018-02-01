@@ -221,8 +221,8 @@ end
 # variants.
 #
 # file_path   - String giving the path to the 23andMe raw data file
-# annotations - Array containing gene annotations
-# fasta       - Array containing gene sequence
+# annotations - Hash containing gene annotations
+# fasta       - Hash containing gene sequence
 #
 # Returns an array of variants falling within the CDH1 region and their
 # genotypes per the raw data file.
@@ -264,7 +264,7 @@ end
 # updates their variant annotations accordingly.
 #
 # variants - Array of variants extracted from 23andMe raw data file.
-# vcf      - Array containing 1000 genomes variant information.
+# vcf      - Hash containing 1000 genomes variant information.
 def check_for_uncommon_alleles(variants, vcf)
   variants.each do |variant|
     if variant.genotype == '--' || vcf[variant.id] == nil
@@ -315,8 +315,8 @@ end
 # accordingly.
 #
 # variants    - Array of variants extracted from the 23andMe raw data file.
-# annotations - Array containing gene annotations
-# fasta       - Array containing gene sequence
+# annotations - Hash containing gene annotations
+# fasta       - Hash containing gene sequence
 def check_for_protein_mutations(variants, annotations, fasta)
   variants.each do |variant|
     unless (variant.annotations.include? 'exon') &&
